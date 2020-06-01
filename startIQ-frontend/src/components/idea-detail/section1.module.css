@@ -1,0 +1,122 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .body-class {
+    margin: 0px;
+    /* background: #edf0f2; */
+    padding : 20px;
+  }
+  
+  .main-content {
+    /* background: url('../images/screen_1.jpg'); */
+    background:  url('../../assets/images/screen_1.jpg');
+    min-height: 800px;
+  }
+  
+  .page-content {}
+  
+  .head-section {}
+  
+  .head-box {
+    border: 2px solid black;
+    width: 351px;
+    text-align: center;
+    height: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+  
+  .page {
+    max-width: 794px;
+    height: 1123px;
+    margin: 0px auto;
+    padding: 98px 94px;
+    background: rgb(244, 244, 244);
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(14, 19, 24, .07);
+  }
+  
+  .content {
+    max-width: 796px;
+    height: 400px;
+    width: 1000px;
+    background: rgb(197, 225, 204);
+    z-index: 14;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -94px;
+    margin-top: 200px;
+  }
+  
+  .screen1 {
+    /* background: url('./screen_1.png'); */
+    background : url('../../assets/images/screen_1.jpg');
+  }
+  
+  .title {
+    font-size: 40px;
+    text-align : center;
+    padding-top : 120px;
+  }
+  
+  .content2 {
+    min-width: 400px;
+    box-sizing: border-box;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: 94px;
+    background: white;
+    padding: 20px;
+  }
+  
+  .sub-content {
+    min-width: 200px;
+    position: relative;
+    right: 55px;
+    top: 78px;
+  }
+  
+  .sub-content p {
+    margin: 0px;
+    /* line-height: 10px; */
+  }
+  
+  .sub-content p {
+    margin: 0px;
+  }
+  
+  .sub-content p.value {
+    font-size: 12px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .left {
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, .65);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(14, 19, 24, .07);
+    position: fixed;
+    left: 100px;
+    margin-top: 300px;
+  }
+  
+  .right {
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, .65);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(14, 19, 24, .07);
+    position: fixed;
+    right: 100px;
+    margin-top: 300px;
+}

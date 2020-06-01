@@ -1,0 +1,661 @@
+openapi: 3.0.1
+info:
+  title: startiq-express-backend
+  description: My cool app
+  version: 1.0.0
+servers:
+- url: /api/v1
+tags:
+- name: Examples
+  description: Simple example endpoints
+- name: Specification
+  description: The swagger API specification
+paths:
+  
+
+  /users/assignRandomBotFlowMode:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+
+  /users/getBotFlowMode:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /users/setBotFlowMode:
+    post:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/setBotFlowModeSchema'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /users:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: id
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+          
+    post:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserBody'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+    delete:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+      - name: id
+        in: query
+        description: The id of the example to retrieve
+        required: true
+        schema:
+          type: string
+
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+    
+    patch:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserPatchBody'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+  
+  /users/allUsers:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /users/byEmail:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /users/founderquiz/creativityScore:
+    post:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FounderQuizBodySchema'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /users/all:
+    get:
+      tags:
+      - Users
+      description: Fetch all users
+      parameters:
+        - name: perPage
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all users
+          content: {}
+
+
+
+  /kos/allSubmittedIdeas:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+
+
+  /kos/kosByPage:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: perPage
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/report:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: ko_id
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/numberOfSubmittedIdeas:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/ko:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: id
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/sorted:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: sortBy
+          in: query
+          description: Criteria to sort by
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/numbered:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: sortBy
+          in: query
+          description: Criteria to sort by
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+  
+          
+
+  /kos/ideaNameSlug:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: ideaNameSlug
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+  /kos/ideaName:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: ideaName
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+  /kos/numCommonPrefixIdeaName:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+        - name: prefix
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+        
+
+
+  /kos/count:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /kos/all:
+    delete:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+
+  /kos:
+    post:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KoBody'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+        - name: emailId
+          in: query
+          description: The id of the example to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+    delete:
+      tags:
+      - Examples
+      description: Fetch all examples
+      parameters:
+      - name: id
+        in: query
+        description: The id of the example to retrieve
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+    patch:
+      tags:
+      - Examples
+      description: Fetch all examples
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KoPatchBody'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+  /admin/allData:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+
+    
+  /examples:
+    get:
+      tags:
+      - Examples
+      description: Fetch all examples
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+    post:
+      tags:
+      - Examples
+      description: Create a new example
+      requestBody:
+        description: an example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExampleBody'
+        required: true
+      responses:
+        200:
+          description: Returns all examples
+          content: {}
+  /examples/{id}:
+    get:
+      tags:
+      - Examples
+      parameters:
+      - name: id
+        in: path
+        description: The id of the example to retrieve
+        required: true
+        schema:
+          type: integer
+      responses:
+        200:
+          description: Return the example with the specified id
+          content: {}
+        404:
+          description: Example not found
+          content: {}
+  /spec:
+    get:
+      tags:
+      - Specification
+      responses:
+        200:
+          description: Return the API specification
+          content: {}
+
+components:
+  schemas:
+
+
+    FounderQuizBodySchema:
+      title: example
+      type: object
+      properties:
+        botFlowMode:
+          type: string
+          example: no_stress
+        emailId:
+          type: string
+          example: no_stress      
+
+
+
+    setBotFlowModeSchema:
+      title: example
+      required: 
+      - emailId
+      type: object
+      properties:
+        botFlowMode:
+          type: string
+          example: no_stress
+        emailId:
+          type: string
+          example: no_stress
+
+    ExampleBody:
+      title: example
+      required:
+      - name
+      type: object
+      properties:
+        name:
+          type: string
+          example: no_stress
+
+    UserBody:
+      title: user
+      required:
+      - username
+      # - password
+      - email
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+        email:
+          type: string
+
+    UserPatchBody:
+      title: user
+      required:
+      - emailId
+      type: object
+      properties:
+        id:
+          type: string
+
+    KoPatchBody:
+      title: ko
+      # required:
+      # - id
+      # type: object
+      # properties:
+      #   id:
+      #     type: string
+    
+    KoBody:
+      title: ko
+      # required:
+      # - title
+      # - type
+      # - details
+      # - owner
+      type: object
+      properties:
+        title:
+          type : string
+        type: 
+          type: string
+        password:
+          type: string
+        email:
+          type: string
+

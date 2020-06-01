@@ -1,0 +1,70 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'Avenir LT 35';
+  src: url('fonts/AvenirLT/AvenirLT-Light.eot');
+  src: local('Avenir LT 35 Light'), local('AvenirLT-Light'),
+  url('fonts/AvenirLT/AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/AvenirLT/AvenirLT-Light.woff') format('woff'),
+  url('fonts/AvenirLT/AvenirLT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT 45 Book';
+  src: url('fonts/AvenirLT/AvenirLT-Book.eot');
+  src: local('Avenir LT 45 Book'), local('AvenirLT-Book'),
+  url('fonts/AvenirLT/AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
+  url('fonts/AvenirLT/AvenirLT-Book.woff') format('woff'),
+  url('fonts/AvenirLT/AvenirLT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #000000;
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+  p {
+    font-family: 'Avenir LT 45 Book';
+  }
+}
+
+//$primaryColor: rgba(28, 55, 129, 1);
+$primaryColor: #000;
+$secondaryColor: #000;
+$blueColor: #2047C4;
+$Avenir_LT_35: 'Avenir LT 35';
+$Avenir_LT_45_Book: 'Avenir LT 45 Book';
+$Poppins: 'Poppins', sans-serif;
+
+
+.orange-btn {
+  background-color: #2047C4;
+  border: solid #2047C4;
+  cursor: pointer !important;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 12px 35px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2047C4;
+  }
+}
+
+.carousel-control-next {
+  img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}

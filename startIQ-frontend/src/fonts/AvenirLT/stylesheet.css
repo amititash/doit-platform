@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Roman.eot');
+    src: local('Avenir LT 55 Roman'), local('AvenirLT-Roman'),
+        url('AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Roman.woff') format('woff'),
+        url('AvenirLT-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-MediumOblique.eot');
+    src: local('Avenir LT 65 Medium Oblique'), local('AvenirLT-MediumOblique'),
+        url('AvenirLT-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-MediumOblique.woff') format('woff'),
+        url('AvenirLT-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Heavy.eot');
+    src: local('Avenir LT 85 Heavy'), local('AvenirLT-Heavy'),
+        url('AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Heavy.woff') format('woff'),
+        url('AvenirLT-Heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-Black.eot');
+    src: local('Avenir LT 95 Black'), local('AvenirLT-Black'),
+        url('AvenirLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Black.woff') format('woff'),
+        url('AvenirLT-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 35';
+    src: url('AvenirLT-LightOblique.eot');
+    src: local('Avenir LT 35 Light Oblique'), local('AvenirLT-LightOblique'),
+        url('AvenirLT-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-LightOblique.woff') format('woff'),
+        url('AvenirLT-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-BlackOblique.eot');
+    src: local('Avenir LT 95 Black Oblique'), local('AvenirLT-BlackOblique'),
+        url('AvenirLT-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-BlackOblique.woff') format('woff'),
+        url('AvenirLT-BlackOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-HeavyOblique.eot');
+    src: local('Avenir LT 86 Heavy Oblique'), local('AvenirLT-HeavyOblique'),
+        url('AvenirLT-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-HeavyOblique.woff') format('woff'),
+        url('AvenirLT-HeavyOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-Medium.eot');
+    src: local('Avenir LT 65 Medium'), local('AvenirLT-Medium'),
+        url('AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Medium.woff') format('woff'),
+        url('AvenirLT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 35';
+    src: url('AvenirLT-Light.eot');
+    src: local('Avenir LT 35 Light'), local('AvenirLT-Light'),
+        url('AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Light.woff') format('woff'),
+        url('AvenirLT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 45 Book';
+    src: url('AvenirLT-Book.eot');
+    src: local('Avenir LT 45 Book'), local('AvenirLT-Book'),
+        url('AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Book.woff') format('woff'),
+        url('AvenirLT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Oblique.eot');
+    src: local('Avenir LT 55 Oblique'), local('AvenirLT-Oblique'),
+        url('AvenirLT-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-Oblique.woff') format('woff'),
+        url('AvenirLT-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT 45 Book';
+    src: url('AvenirLT-BookOblique.eot');
+    src: local('Avenir LT 45 Book Oblique'), local('AvenirLT-BookOblique'),
+        url('AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLT-BookOblique.woff') format('woff'),
+        url('AvenirLT-BookOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) {
+  .menu-close, .menu-open {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    .col-2, .col-1 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .r-section {
+      ul {
+        padding-left: 15px;
+      }
+    }
+    img {
+      max-width: 100% !important;
+    }
+    .header {
+      padding: 10px 0;
+      .row {
+        >div {
+          &:first-child {
+            width: 80%;
+          }
+          &:last-child {
+            width: 20%;
+          }
+        }
+      }
+      .sidebar {
+        background-color: #f4f4f4;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 50px;
+        display: none;
+        ul {
+          li {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+            a {
+              font-size: 20px;
+              border-bottom: 1px solid;
+              min-width: 200px;
+              &:hover, &:focus, &:active {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      .auth-blk {
+        margin: 45px 0 0;
+      }
+      //.menu-open {
+      //  position: absolute;
+      //  top: 15px;
+      //  right: 15px;
+      //}
+      .menu-close {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+    .first-section {
+      padding-bottom: 10px;
+      .hero-image {
+        width: 100%;
+      }
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      .col-left {
+        margin-bottom: 50px;
+      }
+    }
+    .seventh-section {
+      .s-blk {
+        margin-bottom: 50px;
+      }
+    }
+    .eight-section {
+      padding-top: 0;
+      .col1 {
+        margin-bottom: 140px;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    .firth-section {
+      .carousel-item {
+        p {
+          padding: 0 15px;
+        }
+      }
+      h2 {
+        font-size: 40px;
+      }
+      .col-1 {
+        >div {
+          height: auto;
+          padding-top: 50px;
+        }
+      }
+      .col-1, .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .second-section {
+      .s-inner-blk {
+        img {
+          margin-bottom: 0 !important;
+        }
+        h3 {
+          margin: 20px 0 50px !important;
+        }
+      }
+    }
+    .third-section {
+      p {
+        margin-top: 40px;
+      }
+    }
+    footer {
+      form {
+        input {
+          width: 100%;
+        }
+        button {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 767px) {
+
+}
